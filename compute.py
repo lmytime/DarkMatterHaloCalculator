@@ -1,10 +1,13 @@
 import numpy as np
 import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 import os, sys, glob, time, cStringIO
 import parameter as par
 import cosmology_lib as Cosmo
 reload(Cosmo)
+
 
 def compute(m, z):
     rvir = rvir_mvir(m, z=z)

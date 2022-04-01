@@ -12,7 +12,7 @@ reload(Cosmo)
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/dmhalo', methods=['GET', 'POST'])
 def index():
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
